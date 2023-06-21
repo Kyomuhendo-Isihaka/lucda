@@ -537,8 +537,8 @@ p {
 .sec-btn {
     min-width: 120px;
     min-height: 58px;
-    background: #f3f3f5;
-    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+    background: #e3a92b;
+    /* box-shadow: 9px 9px 12px #d6a029, -9px -9px 12px #ffd837; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -558,7 +558,7 @@ p {
 
 .sec-btn:hover {
     border-color: #0d0d25;
-    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+    box-shadow: inset 9px 9px 12px #ffd837, inset -9px -9px 12px #ffd837;
     color: #0d0d25;
 }
 
@@ -757,7 +757,7 @@ p {
     background: linear-gradient(145deg, #ececec, #ffffff);
     box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
     display: flow-root;
-    padding: 0 30px 40px;
+    padding: 0 20px 30px;
     padding-top: 0;
     margin: 130px 0 30px;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
@@ -838,13 +838,13 @@ p {
 }
 
 .dish-info, .dist-bottom-row {
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .dish-info {
     border-bottom: 2px solid rgb(204 204 204 / 30%);
-    margin: 30px 0 30px;
-    padding-bottom: 30px;
+    margin: 20px 0 20px;
+    padding-bottom: 15px;
 }
 
 .dist-bottom-row ul li {
@@ -1327,6 +1327,17 @@ textarea{
     transform: translate(0, -50%);
 }
 
+@media screen and (max-width: 600px) {
+    .form_name{
+        flex-direction: column;
+    }
+    .form_name input[type='text']{
+        width: 100%;
+        
+    }
+    
+}
+
 
 /* ************************ */
 
@@ -1381,15 +1392,15 @@ textarea{
 }
 
 .sec-btn.primary-btn,.contact_form .btn {
-    background: linear-gradient(145deg, blue, blue);
+    /* background: linear-gradient(145deg, #ffd837, #ffc933); */
     color: #ffff;
     border: none;
-    box-shadow: 4px 4px 8px #9e9e9e, -4px -4px 8px #ffffff;
+  
 }
 
 .sec-btn.primary-btn:hover,
 .contact_form .btn:hover {
-    background: linear-gradient(145deg, #0c0c21, #0e0e28);
+    box-shadow: inset 9px 9px 12px #ffd837, inset -9px -9px 12px #ffd837;
 }
 
 /* ***************** footer ****************** */
